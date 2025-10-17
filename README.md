@@ -1,5 +1,5 @@
 <div align="center">
-    ![](./preview.png)
+    <img src="preview.png" width="100%" height="100%" alt="bunnyfetch preview">
 </div>
 <h1 align="center"> Bunnyfetch </h1>
 
