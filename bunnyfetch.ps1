@@ -35,5 +35,5 @@ Write-Host ")(" -nonewline
 Write-Host '"' -foregroundcolor red -nonewline
 Write-Host ")   " -nonewline
 Write-Host "$pk  " -foregroundcolor blue -nonewline
-Write-Host "$pkgnum"
+Write-Host "$pkgnum (scoop's)"
 Write-Host ""
