@@ -1,12 +1,13 @@
 <div align="center">
     <img src="preview.png" width="100%" height="100%" alt="bunnyfetch preview">
 </div>
-<h1 align="center"> Bunnyfetch </h1>
+<h3 align="center"> Bunnyfetch </h3>
 
-This is my personal fork of [elenapan's](https://github.com/elenapan) bunnyfetch.
-Hope you like it
+<p align="center">
+    This is my personal fork of [elenapan's](https://github.com/elenapan) bunnyfetch.
+    Hope you like it
+</p>
 
-<br>
 <br>
 
 ## Setup
@@ -20,7 +21,6 @@ Hope you like it
     + [Git]()
     + [Scoop](https://scoop.sh)
 
-    <br>
     <br>
 
 2. **Installation**
@@ -51,5 +51,4 @@ Hope you like it
     .\install.ps1
     ```
 
-    <br>
     <br>
