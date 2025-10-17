@@ -1,16 +1,16 @@
 <div align="center">
     <img src="preview.png" width="100%" height="100%" alt="bunnyfetch preview">
 </div>
-<h3 align="center"> Bunnyfetch </h3>
+<h2 align="center"> Bunnyfetch </h2>
 
 <p align="center">
-    This is my personal fork of [elenapan's](https://github.com/elenapan) bunnyfetch.
+    This is my personal fork of Elenapan's bunnyfetch.
     Hope you like it
 </p>
 
 <br>
 
-## Setup
+### Setup
 
 1. **Dependencies**
 
