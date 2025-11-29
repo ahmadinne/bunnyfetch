@@ -19,7 +19,9 @@ $taskdesc = "Autorun bunnyfetches at start"
 $taskfold = "\Autostart"
 
 # --- Components ---
-$action = New-ScheduledTaskAction -Execute $taskpath
+$action = New-ScheduledTaskAction `
+	-Execute "powershell.exe" `
+	-Argument "-NoProfile -ExecutionPolicy Bypass -WindowStyle Hidden -File `"$taskpath`""
 $trigger = New-ScheduledTaskTrigger -AtLogOn
 $principal = New-ScheduledTaskPrincipal -UserId $env:USERNAME -LogonType Interactive -RunLevel Highest
 
