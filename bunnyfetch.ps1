@@ -10,7 +10,7 @@ $sh = "sh"
 $shname = "Powershell $($PSVersionTable.PSVersion.Major).$($PSVersionTable.PSVersion.Minor)"
 
 $pk = "pk"
-$pkgnum = (Winget list).count
+$pkgnum = cat "$env:USERPROFILE\.cache\bunnyfetch_cache"
 
 # Starto
 Write-Host ""
