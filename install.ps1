@@ -1,2 +1,9 @@
 #!/usr/bin/env powershell
-Copy-Item bunnyfetch.ps1 ~/scoop/shims/bunnyfetch.ps1
+$path = "$env:USERPROFILE\Scripts"
+if (!(Test-Path $path)) {
+	mkdir $path
+}
+[System.Environment]::SetEnvironmentVariable("PATH", $env:PATH + ";$path", "User")
+$env:PATH = [System.Environment]::GetEnvironmentVariable("PATH", "User")
+
+Copy-Item -Path "bunnyfetch.ps1" -Destination "${path}\bunnyfetch.ps1" -Force
