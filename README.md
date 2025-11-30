@@ -14,7 +14,7 @@
 
 1. **Dependencies**
 
-    There's not much dependencies, you only need Powershell and Winget(which is default shell for windows), and Git!
+    There's not much dependencies, you only need Powershell and Winget (which is installed by default on Windows), and Git!
     Everything will be installed through the Installation step.
 
     + Powershell
