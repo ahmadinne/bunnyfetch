@@ -29,8 +29,17 @@
 
     ```powershell
     Winget install Git.Git
+    ```
+
+    ```powershell
     git clone https://github.com/ahmadinne/bunnyfetch
+    ```
+
+    ```powershell
     cd bunnyfetch
+    ```
+
+    ```powershell
     .\install.ps1
     ```
 
