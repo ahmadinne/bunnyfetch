@@ -25,7 +25,7 @@
 
 2. **Installation**
 
-    Open your terminal, and copy these commands (one by one)
+    Open your terminal (AS ADMINISTRATOR!), and copy these commands (one by one)
 
     ```powershell
     Winget install Git.Git
@@ -36,11 +36,8 @@
     ```
 
     ```powershell
-    cd bunnyfetch
-    ```
-
-    ```powershell
-    .\install.ps1
+    cd bunnyfetch; .\install.ps1
     ```
 
     <br>
+
