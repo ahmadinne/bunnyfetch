@@ -28,26 +28,9 @@
     Open your terminal, and copy these commands (one by one)
 
     ```powershell
-    Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser
-    ```
-
-    ```powershell
-    Invoke-RestMethod -Uri https://get.scoop.sh | Invoke-Expression 
-    ```
-
-    ```powershell
-    scoop install git
-    ```
-
-    ```powershell
+    Winget install Git.Git
     git clone https://github.com/ahmadinne/bunnyfetch
-    ```
-
-    ```powershell
     cd bunnyfetch
-    ```
-
-    ```powershell
     .\install.ps1
     ```
 
