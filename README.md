@@ -14,12 +14,12 @@
 
 1. **Dependencies**
 
-    There's not much dependencies, you only need Powershell(which is default shell for windows), Git and Scoop!
+    There's not much dependencies, you only need Powershell and Winget(which is default shell for windows), and Git!
     Everything will be installed through the Installation step.
 
     + Powershell
+    + Winget
     + [Git]()
-    + [Scoop](https://scoop.sh)
 
     <br>
 
