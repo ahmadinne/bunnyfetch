@@ -63,3 +63,4 @@ Register-ScheduledTask `
 	-Description $taskdesc
 
 if ($?) { Write-Host "Task '$taskname' successfully registered in folder '$taskfold'." }
+./bunnyfetches.ps1
