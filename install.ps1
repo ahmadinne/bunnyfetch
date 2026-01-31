@@ -1,6 +1,7 @@
 #!/usr/bin/env powershell
 
 # 1. Create path and add it to environment
+$curd = $(Get-Location)
 $path = "$env:USERPROFILE\Scripts"
 if (!(Test-Path $path)) {
 	mkdir $path
@@ -8,8 +9,8 @@ if (!(Test-Path $path)) {
 	$env:PATH = [System.Environment]::GetEnvironmentVariable("PATH", "User")
 }
 
-Copy-Item -Path "bunnyfetch.ps1" -Destination "${path}\bunnyfetch.ps1" -Force
-Copy-Item -Path "bunnyfetches.ps1" -Destination "${path}\bunnyfetches.ps1" -Force
+Copy-Item -Path "${curd}\bunnyfetch.ps1" -Destination "${path}\bunnyfetch.ps1" -Force
+Copy-Item -Path "${curd}\bunnyfetches.ps1" -Destination "${path}\bunnyfetches.ps1" -Force
 
 # 2. Create autostart to run bunnyfetches every start
 # --- Configurations ---
