@@ -8,11 +8,13 @@ if (!(Test-Path $path)) {
 	$env:PATH = [System.Environment]::GetEnvironmentVariable("PATH", "User")
 }
 
-Copy-Item -Path "bunnyfetch.ps1" -Destination "${path}\bunnyfetch.ps1" -Force ||
+if (!(Copy-Item -Path "bunnyfetch.ps1" -Destination "${path}\bunnyfetch.ps1" -Force)) {
 	Copy-Item -Path "$env:USERPROFILE\Documents\bunnyfetch\bunnyfetch.ps1" -Destination "${path}\bunnyfetch.ps1" -Force
+}
 
-Copy-Item -Path "bunnyfetches.ps1" -Destination "${path}\bunnyfetches.ps1" -Force ||
+if (!(Copy-Item -Path "bunnyfetches.ps1" -Destination "${path}\bunnyfetches.ps1" -Force)) {
 	Copy-Item -Path "$env:USERPROFILE\Documents\bunnyfetch\bunnyfetches.ps1" -Destination "${path}\bunnyfetches.ps1" -Force
+}
 
 # 2. Create autostart to run bunnyfetches every start
 # --- Configurations ---
