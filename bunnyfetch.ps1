@@ -1,16 +1,15 @@
 #!\usr\bin\env powershell
 $os = "os"
-$osname = (Get-CimInstance Win32_OperatingSystem).Caption
-$osname = $osname -replace '^Microsoft\s+', ''
+$osname = cat "$env:USERPROFILE\.cache\os"
 
 $kn = "kn"
-$knname = (Get-CimInstance Win32_OperatingSystem).Version
+$knname = cat "$env:USERPROFILE\.cache\kn"
 
 $sh = "sh"
-$shname = "Powershell $($PSVersionTable.PSVersion.Major).$($PSVersionTable.PSVersion.Minor)"
+$shname = cat "$env:USERPROFILE\.cache\sh"
 
 $pk = "pk"
-$pkgnum = cat "$env:USERPROFILE\.cache\bunnyfetch_cache"
+$pkgnum = cat "$env:USERPROFILE\.cache\pk"
 
 # Starto
 Write-Host ""
